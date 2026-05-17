@@ -1,0 +1,19 @@
+# Atmel Studio build output
+Debug/
+Release/
+*.o
+*.d
+*.lss
+*.map
+*.obj
+*.tmp
+*.eep
+*.elf
+*.atsuo
+
+# Proteus machine-specific workspace
+*.workspace
+
+# Windows
+Thumbs.db
+Desktop.ini
