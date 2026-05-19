@@ -59,8 +59,8 @@ hvac-atmega32/
 ## How to Run
 
 **Simulation (Proteus):**
-1. Open `SAM_ESH_MPI.pdsprj` in Proteus 8+
-2. Load `SAM_ESH_MPI.hex` into the ATmega32 component
+1. Open `MPI Project.pdsprj` in Proteus 8+
+2. Load `.hex` into the ATmega32 component
 3. Run simulation
 
 **Physical hardware:**
