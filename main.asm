@@ -1,6 +1,12 @@
-.include "m32def.inc"
+;
+; HVAC Project.asm
+;
+; Created: 5/19/2026 6:28:55 PM
+; Author : Hp
+;
 
-; -------------------------------------------------------
+
+
 ; REGISTER ALIASES
 ; -------------------------------------------------------
 .def V0   = r16       ; general purpose
@@ -40,7 +46,7 @@
     rjmp RESET
 
 ; -------------------------------------------------------
-; RESET â€” INIT EVERYTHING
+; RESET — INIT EVERYTHING
 ; -------------------------------------------------------
 RESET:
     ; Stack pointer
@@ -189,7 +195,7 @@ LOOP_END:
 ; Normal: Line1 "T:XXC  H:XX%"  Line2 "Status: NORMAL"
 DISPLAY_NORMAL:
     rcall LCD_CLEAR
-    ; Line 1 â€” temperature and humidity
+    ; Line 1 — temperature and humidity
     ldi ZH, high(STR_T<<1)
     ldi ZL, low(STR_T<<1)
     rcall LCD_PRINT_PGMEM
@@ -257,7 +263,7 @@ DISPLAY_CUR_FAULT:
     ret
 
 ; -------------------------------------------------------
-; LCD DRIVER â€” 4-BIT MODE, HD44780 COMPATIBLE
+; LCD DRIVER — 4-BIT MODE, HD44780 COMPATIBLE
 ; PORTC: RS=PC0, EN=PC1, RW=PC2, D4-D7=PC4-PC7
 ; -------------------------------------------------------
 
