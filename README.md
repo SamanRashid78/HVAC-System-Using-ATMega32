@@ -49,8 +49,10 @@ The system continuously reads three sensors and responds in one of four states:
 ```
 hvac-atmega32/
 ├── main.asm          ← full AVR Assembly source
-├── SAM_ESH_MPI.hex   ← compiled hex (flash directly to ATmega32)
-├── SAM_ESH_MPI.pdsprj← Proteus simulation project
+├── HVAC Project.hex   ← compiled hex (flash directly to ATmega32)
+├── HVAC Project.pdsprj← Proteus simulation project
+├──  HVAC Project.atsln ← Atmel Studio 7 Solution File
+├── circuit.png ← Screenshot of the proteus circuit
 └── README.md
 ```
 
@@ -59,8 +61,8 @@ hvac-atmega32/
 ## How to Run
 
 **Simulation (Proteus):**
-1. Open `MPI Project.pdsprj` in Proteus 8+
-2. Load `.hex` into the ATmega32 component
+1. Open `HVAC Project.pdsprj` in Proteus 8
+2. Load `HVAC Project.hex` into the ATmega32 component
 3. Run simulation
 
 **Physical hardware:**
