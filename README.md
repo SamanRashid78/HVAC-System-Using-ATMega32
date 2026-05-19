@@ -53,6 +53,7 @@ hvac-atmega32/
 ├── HVAC Project.pdsprj← Proteus simulation project
 ├──  HVAC Project.atsln ← Atmel Studio 7 Solution File
 ├── circuit.png ← Screenshot of the proteus circuit
+├── Project Report.pdf 
 └── README.md
 ```
 
